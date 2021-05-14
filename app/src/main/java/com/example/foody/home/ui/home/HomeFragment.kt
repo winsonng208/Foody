@@ -22,8 +22,7 @@ class HomeFragment : Fragment() {
         homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        //insert  foodcourt data in database
-
+        //Insert  food court data in database
         val foodcourtList = ArrayList<FoodCourt>()
 
         foodcourtList.add(FoodCourt(0, 1, "China Town Food Court","Jalan Putra, Bandar Alor Setar, 05150 Alor Setar, Kedah", "Alor Setar"))
